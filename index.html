@@ -1,5 +1,17 @@
 <html>
 <head>
+<script language="JavaScript" type="Text/JavaScript">
+//Made by 1st JavaScript Editor
+//http://www.yaldex.com
+//Come and get more (free) products
+
+var initColor;var iddd;var interv;var count;var LinkColor="lime";
+function OverCl1(){if (count%2==0)document.getElementById(iddd).style.color=LinkColor; else document.getElementById(iddd).style.color=initColor;count++;}
+function Over(idd){if (document.getElementById){count=1;iddd=idd;initColor=document.getElementById(iddd).style.color;document.getElementById(iddd).style.color=LinkColor;interv=setInterval("OverCl1()",500);}}
+function Out(idd){if (document.getElementById){clearInterval(interv);document.getElementById(idd).style.color=initColor;}}
+</script>
+
+
 <script language="javascript">
 fifteenth();
 function fifteenth() {     
@@ -42,7 +54,7 @@ else parent[fifteenth].location=fourth2;}
 <h1>Welcome to Anna's Birthday CD </h1>
 <h2>Shot By :     Abhi Ingale</h2>
 <h2>Edited By:    Madhuri & Maitree Deshmukh</h2>
-<h2>Published By: Pratyuush Deshmukh</h2>
+<h2>Published By: Pratyush Deshmukh</h2>
 </head>
 <body>
 <video width="510" height="360" autoplay>
@@ -78,5 +90,8 @@ if (seventeenth) {        nineteenth3();}
 else if (eighteenth||nineteenth) {        twentieth3();}
 </script>
 
+<h2>THIS, THE ABOVE OR BELOW ONE IS LINK TO CD AS PER OS </h2>
+
+<a href="https://youtu.be/R3KJEaY_tlQ" id="YourId" onMouseOver="Over(this.id)" onMouseOut="Out(this.id)">CD</a>
 </body>
 </html>
